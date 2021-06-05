@@ -1,5 +1,5 @@
 Enunciado: Astérix el galo
-Estamos en el año 50 antes de Jesucristo. Toda la Galia está ocupada por los romanos… ¿Toda? ¡No! Una aldea poblada por irreductibles galos resiste todavía y siempre al invasor…
+<br>Estamos en el año 50 antes de Jesucristo. Toda la Galia está ocupada por los romanos… ¿Toda? ¡No! Una aldea poblada por irreductibles galos resiste todavía y siempre al invasor…
 Se quieren modelar batallas entre galos y romanos, teniendo en cuenta que los galos toman pociones mágicas para mejorar su desempeño.
 1. Galos y romanos
 Los galos son los protagonistas de la historia. Su poder se calcula como el producto entre su fuerza (un número que está entre 1 y 25) y su astucia (un número que está entre 1 y 5). Por ejemplo, Asterix es muy astuto y Obelix es muy fuerte. Cuando uno de ellos ataca a un soldado romano, despliega todo su poder y le causa daño. A su vez, el galo pierde una unidad de fuerza al atacar. Si su fuerza disminuye tanto que llega a 0, queda fuera de combate y no puede pelear.
