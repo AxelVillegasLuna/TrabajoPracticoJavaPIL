@@ -11,6 +11,20 @@ public class Galo {
         this.nombre = nombre;
     }
 
+    public void setFuerza(int fuerza) {
+        this.fuerza += fuerza;
+        if(this.fuerza > 25){
+            this.fuerza = 25;
+        }
+    }
+
+    public void setAstucia(int astucia) {
+        this.astucia += astucia;
+        if(this.astucia > 5){
+            this.astucia = 5;
+        }
+    }
+
     public int getFuerza() {
         return fuerza;
     }

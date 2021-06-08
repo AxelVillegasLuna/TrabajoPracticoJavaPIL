@@ -10,6 +10,15 @@ public class Principal {
         int opcion;
         while(flagMenu)
         {
+            System.out.println("   ###     #####   #######  ######   #######  ###  ##           ####     ##                 #####     ###    ##        #####   ");
+            System.out.println("  #####   ###      #######  ###  ##    ###    ###  ##           ##       ##                ###       #####   ##       ###  ##  ");
+            System.out.println("  ## ##    #####   #######  ###  ##    ###    ###  ##           #####    ##                ### ##    ## ##   ##       ###  ##  ");
+            System.out.println(" ##   ##      ###    ###    #######    ###      ####            ##       ##                ###  ##  ##   ##  ##       ###  ##  ");
+            System.out.println(" ##   ##      ###    ###    ######     ###      ####            ##       ##                ###  ##  ##   ##  ##       ###  ##  ");
+            System.out.println(" ## ####  #######    ###    ### ###  #######  #######           #######  #######           #######  ## ####  #######  #######  ");
+            System.out.println(" ## ####  #######    ###    ### ###  #######  ###  ##           #######  #######           #######  ## ####  #######  #######  ");
+            System.out.println(" ## ####  ######     ###    ### ###  #######  ###  ##           #######  #######            #####   ## ####  #######   #####   ");
+
             System.out.println("Galos vs Romanos");
             System.out.println("-------------------");
             System.out.println("1- Atacar un romano");
@@ -37,6 +46,13 @@ public class Principal {
                 else{
                     if (opcion == 2){
                         //Galo toma posión
+                        Galo g1 = new Galo("Roberto");
+                        System.out.println("Fuerza: " + g1.getFuerza());
+                        System.out.println("Astucia: " + g1.getAstucia());
+
+                        Posion p1 = new Posion(g1);
+                        System.out.println("Fuerza final: " + g1.getFuerza());
+                        System.out.println("Astucia final: " + g1.getAstucia());
                     }
                     else{
                         if (opcion == 3){
