@@ -3,6 +3,9 @@ import java.util.Random;
 public class Galo {
     private int fuerza;
     private int astucia;
+
+
+
     private String nombre;
 
     public Galo(String nombre) {
@@ -50,7 +53,7 @@ public class Galo {
         System.out.println("Poder: "+poderGalo);
 
         /*Datos Romano*/
-        System.out.println("Galo: "+romano.getNombre());
+        System.out.println("Romano: "+romano.getNombre());
         System.out.println("--------------------");
         System.out.println("Salud: "+romano.getNivelDeSalud());
         System.out.println("Cantidad de dientes: "+romano.getCantidadDeDientes());
@@ -62,27 +65,41 @@ public class Galo {
         System.out.println("Combate");
 
         boolean resultado = true;
-
+        int contadorCombate = 0;
         while (resultado){
+            contadorCombate++;
             if (romano.getAtaque(poderGalo)){
-                System.out.println(galo.getNombre()+" con "+poderGalo+" de poder ataca a "+romano.getNombre()+
-                        " que queda con "+romano.getCantidadDeDientes()+" dientes y "+romano.getNivelDeSalud()+" de salud");
-                resultado = true;
+
+                System.out.println(toStringCombate(galo, romano, contadorCombate, poderGalo));
+
+                poderGalo = poderGalo - 1;
+                if (poderGalo > 0){
+                    resultado = true;
+                }
+                else{
+                    System.out.println("\nResultado\n\nEl galo "+galo.getNombre()+" se quedo sin fuerza, "+romano.getNombre()+" gana el combate");
+                    resultado = false;
+                }
             }
             else{
                 if (romano.getCantidadDeDientes() < 0){
-                    System.out.println("El romano "+romano.getNombre()+" fue derrotado por que quedo sin dientes");
+                    System.out.println("\nResultado\n\nEl romano "+romano.getNombre()+" fue derrotado por que quedo sin dientes");
                 }
                 else{
                     if (romano.getNivelDeSalud() < 1){
-                        System.out.println("El romano "+romano.getNombre()+" fue derrotado por que quedo sin vida");
+                        System.out.println("\nResultado\n\nEl romano "+romano.getNombre()+" fue derrotado por que quedo sin vida");
                     }
                 }
                 resultado = false;
             }
+
         }
-
-
     }
+
+    public String toStringCombate(Galo galo, Romano romano, int contadorCombate, int poderGalo){
+        return "Combate "+contadorCombate+" - "+ galo.getNombre()+" con "+poderGalo+" de poder ataca a "+romano.getNombre()+
+                " que queda con "+romano.getCantidadDeDientes()+" dientes y "+romano.getNivelDeSalud()+" de salud";
+    }
+
 }
 
