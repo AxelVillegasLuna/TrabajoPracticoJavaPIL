@@ -10,6 +10,7 @@ public class Principal {
         int opcion;
         while(flagMenu)
         {
+            //falta la e
             System.out.println("   ###     #####   #######  ######   #######  ###  ##           ####     ##                 #####     ###    ##        #####   ");
             System.out.println("  #####   ###      #######  ###  ##    ###    ###  ##           ##       ##                ###       #####   ##       ###  ##  ");
             System.out.println("  ## ##    #####   #######  ###  ##    ###    ###  ##           #####    ##                ### ##    ## ##   ##       ###  ##  ");
