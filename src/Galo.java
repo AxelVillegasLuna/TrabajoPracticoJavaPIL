@@ -3,12 +3,17 @@ import java.util.Random;
 public class Galo {
     private int fuerza;
     private int astucia;
+    private int poder;
+    private int contadorCombate;
+
     private String nombre;
 
     public Galo(String nombre) {
         this.fuerza = (int)(Math.random()*(1-25+1)+25);
         this.astucia = (int)(Math.random()*(1-5+1)+5);
+        this.poder = this.fuerza * this.astucia;
         this.nombre = nombre;
+        this.contadorCombate = 0;
     }
 
     public void setFuerza(int fuerza) {
@@ -24,6 +29,13 @@ public class Galo {
             this.astucia = 5;
         }
     }
+    public void setPoder(){
+        this.poder = this.poder - 1;
+    }
+
+    public void setPoderPosion(){
+        this.poder = this.fuerza * this.astucia;
+    }
 
     public int getFuerza() {
         return fuerza;
@@ -31,6 +43,10 @@ public class Galo {
 
     public int getAstucia() {
         return astucia;
+    }
+
+    public int getPoder() {
+        return poder;
     }
 
     public String getNombre() {
@@ -41,48 +57,58 @@ public class Galo {
         /**
          * Esta funcion permite simular el ataque de un Galo a un Romano
          */
-        int poderGalo = galo.getAstucia() * galo.getFuerza();
         /*Datos Galo*/
-        System.out.println("Galo: "+galo.getNombre());
-        System.out.println("--------------------");
-        System.out.println("Fuerza: "+galo.getFuerza());
-        System.out.println("Astucia: "+galo.getAstucia());
-        System.out.println("Poder: "+poderGalo);
+        System.out.println("\n*------------------*");
+        System.out.println("Galo: "+this.nombre);
+        System.out.println("Fuerza: "+this.fuerza);
+        System.out.println("Astucia: "+this.astucia);
+        System.out.println("Poder: "+this.poder);
+        System.out.println("*------------------*");
 
         /*Datos Romano*/
-        System.out.println("Galo: "+romano.getNombre());
-        System.out.println("--------------------");
+        System.out.println("\n#----------------------------#");
+        System.out.println("Romano: "+romano.getNombre());
         System.out.println("Salud: "+romano.getNivelDeSalud());
         System.out.println("Cantidad de dientes: "+romano.getCantidadDeDientes());
+        System.out.println("#----------------------------#");
 
-        /**
-         * Optimizar las impresiones de arriba con un toString en cada objeto
-         */
+        System.out.println("\n/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
 
-        System.out.println("Combate");
+        contadorCombate++;
 
-        boolean resultado = true;
+        if (romano.getAtaque(this.poder)){
+            System.out.println(toStringCombate(galo, romano, contadorCombate));
+            galo.setPoder();
 
-        while (resultado){
-            if (romano.getAtaque(poderGalo)){
-                System.out.println(galo.getNombre()+" con "+poderGalo+" de poder ataca a "+romano.getNombre()+
-                        " que queda con "+romano.getCantidadDeDientes()+" dientes y "+romano.getNivelDeSalud()+" de salud");
-                resultado = true;
-            }
-            else{
-                if (romano.getCantidadDeDientes() < 0){
-                    System.out.println("El romano "+romano.getNombre()+" fue derrotado por que quedo sin dientes");
-                }
-                else{
-                    if (romano.getNivelDeSalud() < 1){
-                        System.out.println("El romano "+romano.getNombre()+" fue derrotado por que quedo sin vida");
-                    }
-                }
-                resultado = false;
+            if (this.poder < 0){
+                System.out.println("El galo "+this.nombre+" se quedo sin fuerza, "+romano.getNombre()+" gana el combate");
+                System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
             }
         }
+        else{
+            if (romano.getCantidadDeDientes() <= 0){
+                System.out.println("El romano "+romano.getNombre()+" fue derrotado por que quedo sin dientes");
+                System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
+            }
+            else{
+                if (romano.getNivelDeSalud() < 1){
+                    System.out.println("El romano "+romano.getNombre()+" fue derrotado por que quedo sin vida");
+                    System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
+                }
+            }
 
+        }
 
+        }
+
+    public String toStringCombate(Galo galo, Romano romano, int contadorCombate){
+        return "Combate "+contadorCombate+" - "+ this.nombre+" con "+this.poder+" de poder ataca a "+romano.getNombre()+
+                " que queda con "+romano.getCantidadDeDientes()+" dientes y "+romano.getNivelDeSalud()+" de salud\n"+"/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/\n";
     }
+
+    public void tomarPosion(Galo galo){
+        new Posion(galo);
+    }
+
 }
 

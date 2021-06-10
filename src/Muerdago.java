@@ -12,25 +12,16 @@ public class Muerdago extends Ingrediente{
                 galo.setFuerza(1);
                 valorNuevoAstucia = (astuciaGalo * 75) / 100;
                 galo.setAstucia(valorNuevoAstucia);
-                System.out.println("Muerdago");
-                System.out.println("Fuerza: " + galo.getFuerza());
-                System.out.println("Astucia: " + galo.getAstucia());
                 break;
             case 2:
                 galo.setFuerza(2);
                 valorNuevoAstucia = (astuciaGalo * 50) / 100;
                 galo.setAstucia(valorNuevoAstucia);
-                System.out.println("Muerdago");
-                System.out.println("Fuerza: " + galo.getFuerza());
-                System.out.println("Astucia: " + galo.getAstucia());
                 break;
             case 3:
                 galo.setFuerza(3);
                 valorNuevoAstucia = (astuciaGalo * 25) / 100;
                 galo.setAstucia(valorNuevoAstucia);
-                System.out.println("Muerdago");
-                System.out.println("Fuerza: " + galo.getFuerza());
-                System.out.println("Astucia: " + galo.getAstucia());
                 break;
             default:
                 galo.setFuerza(0);

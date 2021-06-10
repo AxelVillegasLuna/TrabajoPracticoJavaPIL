@@ -2,22 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Posion {
-    private List<Integer> ingredientes = new ArrayList<Integer>();
-
-    public void MostrarIngredientes(){
-        for(int ingrediente: ingredientes){
-            System.out.println(ingrediente);
-        }
-    }
+    private int cantidadIngredientes = (int) (Math.random() * 4) + 1;
+    private Ingrediente ingredientes [] = new Ingrediente [cantidadIngredientes];
 
     public Posion(Galo galo) {
-        int cantidadIngredientes = (int) (Math.random() * 4) + 1;
-        for(int i = 1; i <= cantidadIngredientes; i++){
-            ingredientes.add((int) (Math.random() * 4) + 1);
-        }
 
-        for(int ingrediente: ingredientes){
-            switch(ingrediente) {
+        for(int i = 0; i < this.ingredientes.length; i++){
+            ingredientes[i] = new Ingrediente();
+            switch(this.ingredientes[i].tipo) {
                 case 1:
                     //Dulce de leche
                     new DulceDeLeche(galo);
@@ -38,6 +30,15 @@ public class Posion {
                     continue;
             }
         }
+
+        galo.setPoderPosion();
+
+        System.out.println(toStringPosion(galo));
+
+    }
+
+    public String toStringPosion(Galo galo){
+        return "\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n" + galo.getNombre() + " bebió la Posión y quedó con " + galo.getAstucia() + " de astucia y " + galo.getFuerza() + " de fuerza.\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n" ;
     }
 
 }
