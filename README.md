@@ -11,4 +11,4 @@ Una poción se prepara mezclando diferentes ingredientes los cuales quedan conte
 • Manojo de muérdago: aumenta la fuerza en tantas unidades como el tamaño del manojo. Además, incrementa la astucia en un porcentaje según qué tan seco se encuentre el muérdago. (por ejemplo: 1 muy seco 75%, 2 seco 50%, 3 no tan seco 25%) <br>
 • Aceite de roca (petra-oleum): vuelve a quien la ingiera tantas veces más fuerte como cm3 tenga la dosis. (Tener en cuenta que la fuerza no puede superar 25) <br>
 • Cucumbers (pepinos): incrementa la astucia en 1 por cada unidad. (Tener en cuenta que la astucia no puede ser mayor a 5). <br>
-• Hacer que un galo tome una poción mágica modificándose de acuerdo a lo indicado, agregar luego en el playground una sentencia que imprima en el Transcript el estado en que quedó él Galo. Por ejemplo: Asterix bebió la Posición y quedó con 4 de astucia y 17 de fuerza. <br>
+• Hacer que un galo tome una poción mágica modificándose de acuerdo a lo indicado, agregar luego en el playground una sentencia que imprima en el Transcript el estado en que quedó él Galo. Por ejemplo: Asterix bebió la Posión y quedó con 4 de astucia y 17 de fuerza. <br>
