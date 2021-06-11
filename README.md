@@ -14,3 +14,4 @@ Una poción se prepara mezclando diferentes ingredientes los cuales quedan conte
 • Hacer que un galo tome una poción mágica modificándose de acuerdo a lo indicado, agregar luego en el playground una sentencia que imprima en el Transcript el estado en que quedó él Galo. Por ejemplo: Asterix bebió la Posición y quedó con 4 de astucia y 17 de fuerza. <br>
 
 Autores: Axel Villegas Luna y Luciano Merlo.
+PD: Aclaramos que hay clases que no van a estar relacionadas con otras debido a que los tiempos no nos alcanzaron para desarrollar dos puntos más del juego pero que en un futuro van a estar.
