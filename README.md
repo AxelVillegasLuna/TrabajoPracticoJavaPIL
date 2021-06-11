@@ -12,3 +12,5 @@ Una poción se prepara mezclando diferentes ingredientes los cuales quedan conte
 • Aceite de roca (petra-oleum): vuelve a quien la ingiera tantas veces más fuerte como cm3 tenga la dosis. (Tener en cuenta que la fuerza no puede superar 25) <br>
 • Cucumbers (pepinos): incrementa la astucia en 1 por cada unidad. (Tener en cuenta que la astucia no puede ser mayor a 5). <br>
 • Hacer que un galo tome una poción mágica modificándose de acuerdo a lo indicado, agregar luego en el playground una sentencia que imprima en el Transcript el estado en que quedó él Galo. Por ejemplo: Asterix bebió la Posición y quedó con 4 de astucia y 17 de fuerza. <br>
+
+Autores: Axel Villegas Luna y Luciano Merlo.
