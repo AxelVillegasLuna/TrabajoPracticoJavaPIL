@@ -1,3 +1,5 @@
+package modelos;
+
 public class AldeaGala {
     private Galo galo;
 
