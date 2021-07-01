@@ -143,7 +143,7 @@ public class Principal {
 
                 } else if (opcion == 2) {
                     // Jugar con galo creado por el jugador
-                    System.out.print("Ingrese nombre del Galo: ");
+                    System.out.print("\nIngrese nombre del Galo: ");
                     String nombreGalo = sc.next();
                     Galo galo = new Galo(nombreGalo);
                     datosGalo.guardarGalo(galo.getNombre(), galo.getAstucia(), galo.getFuerza());

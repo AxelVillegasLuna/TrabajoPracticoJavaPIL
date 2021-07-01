@@ -108,11 +108,19 @@ public class DatosRomano {
         } finally {
             // finally block used to close resources
             try {
-                if (stmt != null) stmt.close();
+                if (stmt != null) {
+                    stmt.close();
+                } else {
+
+                }
             } catch (SQLException se2) {
             } // nothing we can do
             try {
-                if (conn != null) conn.close();
+                if (conn != null) {
+                    conn.close();
+                } else {
+
+                }
             } catch (SQLException se) {
                 se.printStackTrace();
             } // end finally try
@@ -159,11 +167,19 @@ public class DatosRomano {
         } finally {
             // finally block used to close resources
             try {
-                if (stmt != null) stmt.close();
+                if (stmt != null) {
+                    stmt.close();
+                } else {
+
+                }
             } catch (SQLException se2) {
             } // nothing we can do
             try {
-                if (conn != null) conn.close();
+                if (conn != null) {
+                    conn.close();
+                } else {
+
+                }
             } catch (SQLException se) {
                 se.printStackTrace();
             } // end finally try
@@ -215,6 +231,8 @@ public class DatosRomano {
             try {
                 if (conn != null) {
                     conn.close();
+                } else {
+
                 }
             } catch (SQLException se) {
                 se.printStackTrace();
@@ -250,11 +268,19 @@ public class DatosRomano {
         } finally {
             // finally block used to close resources
             try {
-                if (stmt != null) stmt.close();
+                if (stmt != null) {
+                    stmt.close();
+                } else {
+
+                }
             } catch (SQLException se2) {
             } // nothing we can do
             try {
-                if (conn != null) conn.close();
+                if (conn != null) {
+                    conn.close();
+                } else {
+
+                }
             } catch (SQLException se) {
                 se.printStackTrace();
             } // end finally try
