@@ -19,30 +19,28 @@ public class Posion {
                     new DulceDeLeche(galo);
                     break;
                 case 2:
-                    //ingredientes.Muerdago
+                    //Muérdago
                     new Muerdago(galo);
                     break;
                 case 3:
-                    //ingredientes.Cucumber
+                    //Cucumber
                     new Cucumber(galo);
                     break;
                 case 4:
-                    //ingredientes.PetraOleum
+                    //PetraOleum
                     new PetraOleum(galo);
                     break;
-                default:
-                    continue;
             }
         }
 
-        galo.setPoderPosion();
+        galo.setPoderPosion(galo.getFuerza(), galo.getAstucia());
 
         System.out.println(toStringPosion(galo));
 
     }
 
     public String toStringPosion(Galo galo) {
-        return "\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n" + galo.getNombre() + " bebió la Posión y quedó con " + galo.getAstucia() + " de astucia y " + galo.getFuerza() + " de fuerza.\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n";
+        return "\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n" + galo.getNombre() + " bebió la Posión y quedó con " + galo.getAstucia() + " de astucia y " + galo.getFuerza() + " de fuerza\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n";
     }
 
 }

@@ -5,11 +5,18 @@ public class Romano {
     private int cantidadDeDientes;
     private String nombre;
 
+    // Constructor para Romano con datos randoms creado por el jugador
     public Romano(String nombre) {
-
         this.nivelDeSalud = (int) (Math.random() * (1 - 100 + 1) + 100);
         this.cantidadDeDientes = 32;
         this.nombre = nombre;
+    }
+
+    // Constructor para Romano con datos concretos traídos de la DB
+    public Romano(String nombre, int dientes, int salud) {
+        this.nombre = nombre;
+        this.cantidadDeDientes = dientes;
+        this.nivelDeSalud = salud;
     }
 
     public int getNivelDeSalud() {
@@ -28,23 +35,17 @@ public class Romano {
         this.nivelDeSalud = this.nivelDeSalud - (int) (poder * 0.10);
     }
 
-    public void setCantidadDeDientes() {
-        this.cantidadDeDientes = this.cantidadDeDientes - 2;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCantidadDeDientes(int numero) {
+        this.cantidadDeDientes = this.cantidadDeDientes - numero;
     }
 
     public boolean getAtaque(int poder) {
         if (this.nivelDeSalud > 0 && this.cantidadDeDientes > 1) {
             setNivelDeSalud(poder);
-            setCantidadDeDientes();
+            setCantidadDeDientes(2);
 
             if (getCantidadDeDientes() > 1 && getNivelDeSalud() > 0) {
-                /**
-                 * Evaluo si despues del combate el models.Romano pierde
-                 */
+                // Evalúo si después del combate el Romano pierde
                 return true;
             } else {
                 return false;
@@ -53,4 +54,13 @@ public class Romano {
             return false;
         }
     }
+
+    public void mostrarInformacionRomano(Romano romano) {
+        System.out.println("\n#----------------------------#");
+        System.out.println("Romano: " + romano.getNombre());
+        System.out.println("Salud: " + romano.getNivelDeSalud());
+        System.out.println("Cantidad de dientes: " + romano.getCantidadDeDientes());
+        System.out.println("#----------------------------#");
+    }
 }
+

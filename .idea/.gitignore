@@ -1,7 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-../out
-../src/modelos/AldeaGala
-../src/modelos/LegionRomana
+../out/
+../src/modelos/AldeaGala.java
+../src/modelos/LegionRomana.java
 ../TrabajoPracticoJavaPIL.iml

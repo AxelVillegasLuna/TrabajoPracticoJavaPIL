@@ -13,5 +13,31 @@ Una poción se prepara mezclando diferentes ingredientes los cuales quedan conte
 • Cucumbers (pepinos): incrementa la astucia en 1 por cada unidad. (Tener en cuenta que la astucia no puede ser mayor a 5). <br>
 • Hacer que un galo tome una poción mágica modificándose de acuerdo a lo indicado, agregar luego en el playground una sentencia que imprima en el Transcript el estado en que quedó él modelos.Galo. Por ejemplo: Asterix bebió la Posición y quedó con 4 de astucia y 17 de fuerza. <br>
 
+• Diagrama de clases
+
+<img src="src/docs/DiagramaDeClases.jpg" alt="Diagrama de clases" width="100" height="200"/>
+
+• Instrucciones para jugar
+
+Para comenzar a jugar debe ingresar la opción 1, se solicitara que ingrese el nombre
+de los protagonistas del juego, en este caso, se pedira ingresar el nombre del Galo
+y el nombre del romano.
+
+Una vez ingresados los nombres, comenzara el juego, donde usted podra ver los atributos
+de cada personaje y el estado de los mismos luego de cada combate.
+
+Luego de simulado un combate, se le preguntara si desea tomar una posión. La posión, tiene
+como finalidad incrementar el poder del Galo de acuerdo a los ingredientes que la misma posea.
+
+El juego terminara cuando el Galo quede sin poder o, cuando el Romano quede sin dientes o sin salud.
+El Galo, pierde una unidad de fuerza por cada combate, mientras que el Romano pierde dos dientes por
+cada ataque recibido y disminuye su nivel de salud en un 10% del poder del Galo.
+
+Para terminar, presione 3 para salir del juego.
+
+Mucha suerte!!
+
+
+
 Autores: Axel Villegas Luna y Luciano Merlo. <br>
-PD: Aclaramos que hay clases que no van a estar relacionadas con otras debido a que los tiempos no nos alcanzaron para desarrollar dos puntos más del juego pero que en un futuro van a estar.
+

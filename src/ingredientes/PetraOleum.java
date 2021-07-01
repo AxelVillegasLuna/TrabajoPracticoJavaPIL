@@ -19,8 +19,6 @@ public class PetraOleum extends Ingrediente {
             case 6:
                 galo.setFuerza(6);
                 break;
-            default:
-                galo.setFuerza(0);
         }
 
     }
