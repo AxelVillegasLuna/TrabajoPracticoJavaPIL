@@ -5,11 +5,11 @@ import ingredientes.DulceDeLeche;
 import ingredientes.Muerdago;
 import ingredientes.PetraOleum;
 
-public class Posion {
+public class Pocion {
     private int cantidadIngredientes = (int) (Math.random() * 4) + 1;
     private Ingrediente ingredientes[] = new Ingrediente[cantidadIngredientes];
 
-    public Posion(Galo galo) {
+    public Pocion(Galo galo) {
 
         for (int i = 0; i < this.ingredientes.length; i++) {
             ingredientes[i] = new Ingrediente();
@@ -35,12 +35,12 @@ public class Posion {
 
         galo.setPoderPosion(galo.getFuerza(), galo.getAstucia());
 
-        System.out.println(toStringPosion(galo));
+        System.out.println(toStringPocion(galo));
 
     }
 
-    public String toStringPosion(Galo galo) {
-        return "\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n" + galo.getNombre() + " bebió la Posión y quedó con " + galo.getAstucia() + " de astucia y " + galo.getFuerza() + " de fuerza\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n";
+    public String toStringPocion(Galo galo) {
+        return "\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n" + galo.getNombre() + " bebió la Poción y quedó con " + galo.getAstucia() + " de astucia y " + galo.getFuerza() + " de fuerza\n/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+/\n";
     }
 
 }

@@ -111,8 +111,8 @@ public class Galo {
         System.out.println("*------------------*");
     }
 
-    public void tomarPosion(Galo galo) {
-        new Posion(galo);
+    public void tomarPocion(Galo galo) {
+        new Pocion(galo);
     }
 
 }

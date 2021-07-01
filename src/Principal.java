@@ -80,7 +80,7 @@ public class Principal {
 
                                 while (flagMenu) {
                                     System.out.println("1- Seguir atacando");
-                                    System.out.println("2- Beber posión");
+                                    System.out.println("2- Beber poción");
                                     System.out.println("3- Salir");
                                     System.out.print("Ingrese opción: ");
                                     opcion = sc.nextInt();
@@ -93,7 +93,7 @@ public class Principal {
                                             romano.mostrarInformacionRomano(romano);
                                             galo.atacarRomano(galo, romano);
                                         } else if (opcion == 2) {
-                                            galo.tomarPosion(galo);
+                                            galo.tomarPocion(galo);
                                         } else {
                                             // Se termina el juego
                                             System.out.println("¡GAME OVER!");
@@ -112,7 +112,7 @@ public class Principal {
                                 galo.atacarRomano(galo, romano);
                                 while (flagMenu) {
                                     System.out.println("1- Seguir atacando");
-                                    System.out.println("2- Beber posión");
+                                    System.out.println("2- Beber poción");
                                     System.out.println("3- Salir");
                                     System.out.print("Ingrese opción: ");
                                     opcion = sc.nextInt();
@@ -125,7 +125,7 @@ public class Principal {
                                             romano.mostrarInformacionRomano(romano);
                                             galo.atacarRomano(galo, romano);
                                         } else if (opcion == 2) {
-                                            galo.tomarPosion(galo);
+                                            galo.tomarPocion(galo);
                                         } else {
                                             // Se termina el juego
                                             System.out.println("¡GAME OVER!");
@@ -177,7 +177,7 @@ public class Principal {
 
                                 while (flagMenu) {
                                     System.out.println("1- Seguir atacando");
-                                    System.out.println("2- Beber posión");
+                                    System.out.println("2- Beber poción");
                                     System.out.println("3- Salir");
                                     System.out.print("Ingrese opción: ");
                                     opcion = sc.nextInt();
@@ -190,7 +190,7 @@ public class Principal {
                                             romano.mostrarInformacionRomano(romano);
                                             galo.atacarRomano(galo, romano);
                                         } else if (opcion == 2) {
-                                            galo.tomarPosion(galo);
+                                            galo.tomarPocion(galo);
                                         } else {
                                             // Se termina el juego
                                             System.out.println("¡GAME OVER!");
@@ -209,7 +209,7 @@ public class Principal {
                                 galo.atacarRomano(galo, romano);
                                 while (flagMenu) {
                                     System.out.println("1- Seguir atacando");
-                                    System.out.println("2- Beber posión");
+                                    System.out.println("2- Beber poción");
                                     System.out.println("3- Salir");
                                     System.out.print("Ingrese opción: ");
                                     opcion = sc.nextInt();
@@ -222,7 +222,7 @@ public class Principal {
                                             romano.mostrarInformacionRomano(romano);
                                             galo.atacarRomano(galo, romano);
                                         } else if (opcion == 2) {
-                                            galo.tomarPosion(galo);
+                                            galo.tomarPocion(galo);
                                         } else {
                                             // Se termina el juego
                                             System.out.println("¡GAME OVER!");
