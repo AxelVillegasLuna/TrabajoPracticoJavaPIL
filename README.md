@@ -33,4 +33,4 @@ Mucha suerte!!
 
 
 Autores: Axel Villegas Luna y Luciano Merlo. <br>
-
+<h2>ACLARACIÓN IMPORTANTE: por cuestiones de tiempo no hemos podido implementar las Aldeas Galas y las Legiones Romanas pero vendrán en próximas actualizaciones</h2>
