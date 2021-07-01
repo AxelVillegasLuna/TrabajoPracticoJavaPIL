@@ -13,20 +13,20 @@ De los romanos se conoce el nivel de salud (un número entero entre 1 y 100) y l
 • Cucumbers (pepinos): incrementa la astucia en 1 por cada unidad. (Tener en cuenta que la astucia no puede ser mayor a 5). <br>
 • Hacer que un galo tome una poción mágica modificándose de acuerdo a lo indicado, agregar luego en el playground una sentencia que imprima en el Transcript el estado en que quedó él modelos.Galo. Por ejemplo: Asterix bebió la Posición y quedó con 4 de astucia y 17 de fuerza.</p> <br>
 
-• Diagrama de clases
+<h2>Diagrama de clases</h2>
 
 <img src="src/docs/DiagramaDeClases.jpg" alt="Diagrama de clases"/>
 
-• Instrucciones para jugar
+<h2>Instrucciones para jugar</h2>
 
-Para comenzar a jugar debe seleccionar si desea jugar con un Galo cargado en la base de datos o poder crear uno a partir de datos aleatorios excepto su nombre, el cual puede ser elegido por el usuario.
+<p>Para comenzar a jugar debe seleccionar si desea jugar con un Galo cargado en la base de datos o poder crear uno a partir de datos aleatorios excepto su nombre, el cual puede ser elegido por el usuario.
 Una vez seleccionado el Galo, el jugador deberá elegir un Romano de la misma forma que hizo con un Galo, es decir, puede seleccionar uno ya cargado en la base de datos o crear uno con datos aleatorios.
 Una vez elegidos los dos contrincantes, el combate comenzará y en cada turno el jugador puede seguir luchando o tomar una posión si lo ve necesario, la cual tiene
 como finalidad incrementar el poder del Galo de acuerdo a los ingredientes que la misma posea.
 El juego terminará cuando el Galo quede sin poder o cuando el Romano quede sin dientes o sin salud.
 Cabe recordar que el Galo pierde una unidad de fuerza por cada combate, mientras que el Romano pierde dos dientes por
 cada ataque recibido y disminuye su nivel de salud en un 10% del poder del Galo.
-El jugador puede salir del juego en todo momento, solamente tiene que presionar el 3 para salir del juego.
+El jugador puede salir del juego en todo momento, solamente tiene que presionar el 3 para salir del juego.</p>
 
 Mucha suerte!!
 
