@@ -15,25 +15,18 @@ Una poción se prepara mezclando diferentes ingredientes los cuales quedan conte
 
 • Diagrama de clases
 
-<img src="src/docs/DiagramaDeClases.jpg" alt="Diagrama de clases" width="100" height="200"/>
+<img src="src/docs/DiagramaDeClases.jpg" alt="Diagrama de clases"/>
 
 • Instrucciones para jugar
 
-Para comenzar a jugar debe ingresar la opción 1, se solicitara que ingrese el nombre
-de los protagonistas del juego, en este caso, se pedira ingresar el nombre del Galo
-y el nombre del romano.
-
-Una vez ingresados los nombres, comenzara el juego, donde usted podra ver los atributos
-de cada personaje y el estado de los mismos luego de cada combate.
-
-Luego de simulado un combate, se le preguntara si desea tomar una posión. La posión, tiene
+Para comenzar a jugar debe seleccionar si desea jugar con un Galo cargado en la base de datos o poder crear uno a partir de datos aleatorios excepto su nombre, el cual puede ser elegido por el usuario.
+Una vez seleccionado el Galo, el jugador deberá elegir un Romano de la misma forma que hizo con un Galo, es decir, puede seleccionar uno ya cargado en la base de datos o crear uno con datos aleatorios.
+Una vez elegidos los dos contrincantes, el combate comenzará y en cada turno el jugador puede seguir luchando o tomar una posión si lo ve necesario, la cual tiene
 como finalidad incrementar el poder del Galo de acuerdo a los ingredientes que la misma posea.
-
-El juego terminara cuando el Galo quede sin poder o, cuando el Romano quede sin dientes o sin salud.
-El Galo, pierde una unidad de fuerza por cada combate, mientras que el Romano pierde dos dientes por
+El juego terminará cuando el Galo quede sin poder o cuando el Romano quede sin dientes o sin salud.
+Cabe recordar que el Galo pierde una unidad de fuerza por cada combate, mientras que el Romano pierde dos dientes por
 cada ataque recibido y disminuye su nivel de salud en un 10% del poder del Galo.
-
-Para terminar, presione 3 para salir del juego.
+El jugador puede salir del juego en todo momento, solamente tiene que presionar el 3 para salir del juego.
 
 Mucha suerte!!
 
