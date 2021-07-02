@@ -26,7 +26,7 @@ como finalidad incrementar el poder del Galo de acuerdo a los ingredientes que l
 El juego terminará cuando el Galo quede sin poder o cuando el Romano quede sin dientes o sin salud.<br>
 Cabe recordar que el Galo pierde una unidad de fuerza por cada combate, mientras que el Romano pierde dos dientes por
 cada ataque recibido y disminuye su nivel de salud en un 10% del poder del Galo.<br>
-El jugador puede salir del juego en todo momento, solamente tiene que presionar el 3 para salir del juego.</p>
+El jugador puede salir del juego en todo momento, solamente tiene que presionar el botón 3 para salir del juego.</p>
 
 Mucha suerte!!
 
