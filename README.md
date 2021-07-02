@@ -19,13 +19,13 @@ De los romanos se conoce el nivel de salud (un número entero entre 1 y 100) y l
 
 <h2>Instrucciones para jugar</h2>
 
-<p>Para comenzar a jugar debe seleccionar si desea jugar con un Galo cargado en la base de datos o poder crear uno a partir de datos aleatorios excepto su nombre, el cual puede ser elegido por el usuario.
-Una vez seleccionado el Galo, el jugador deberá elegir un Romano de la misma forma que hizo con un Galo, es decir, puede seleccionar uno ya cargado en la base de datos o crear uno con datos aleatorios.
+<p>Para comenzar a jugar debe seleccionar si desea jugar con un Galo cargado en la base de datos o poder crear uno a partir de datos aleatorios excepto su nombre, el cual puede ser elegido por el usuario.<br>
+Una vez seleccionado el Galo, el jugador deberá elegir un Romano de la misma forma que hizo con un Galo, es decir, puede seleccionar uno ya cargado en la base de datos o crear uno con datos aleatorios.<br>
 Una vez elegidos los dos contrincantes, el combate comenzará y en cada turno el jugador puede seguir luchando o tomar una posión si lo ve necesario, la cual tiene
-como finalidad incrementar el poder del Galo de acuerdo a los ingredientes que la misma posea.
-El juego terminará cuando el Galo quede sin poder o cuando el Romano quede sin dientes o sin salud.
+como finalidad incrementar el poder del Galo de acuerdo a los ingredientes que la misma posea.<br>
+El juego terminará cuando el Galo quede sin poder o cuando el Romano quede sin dientes o sin salud.<br>
 Cabe recordar que el Galo pierde una unidad de fuerza por cada combate, mientras que el Romano pierde dos dientes por
-cada ataque recibido y disminuye su nivel de salud en un 10% del poder del Galo.
+cada ataque recibido y disminuye su nivel de salud en un 10% del poder del Galo.<br>
 El jugador puede salir del juego en todo momento, solamente tiene que presionar el 3 para salir del juego.</p>
 
 Mucha suerte!!
